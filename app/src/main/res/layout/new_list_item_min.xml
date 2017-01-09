@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="50dp">
+
+
+    <TextView
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/numText"
+        android:paddingLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#222333"
+        android:paddingTop="15dp" />
+
+    <TextView
+        app:layout_widthPercent="60%"
+        android:layout_height="wrap_content"
+        android:text="Операционные системы"
+        android:id="@+id/nameText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/numText"
+        android:layout_toEndOf="@+id/classNumText"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#222333"
+        android:textSize="16dp" />
+
+    <TextView
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        android:text="558"
+        android:id="@+id/classNumText"
+        android:paddingTop="15dp"
+        android:paddingRight="7dp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="#222333" />
+
+    <TextView
+        app:layout_widthPercent="50%"
+        android:layout_height="wrap_content"
+        android:id="@+id/classTypeText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/numText"
+        android:layout_below="@+id/nameText"
+        android:layout_alignLeft="@+id/nameText"
+        android:text="лекц."
+        android:layout_marginTop="3dp"
+        android:paddingBottom="4dp" />
+
+</android.support.percent.PercentRelativeLayout>
